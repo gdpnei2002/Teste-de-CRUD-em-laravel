@@ -28,8 +28,8 @@
                 </select><br>
                 <input class="form-control" type="time" name="horas" id="horas" value="{{$delivery->horas ?? ''}}" required><br>
                 <input class="form-control" type="longtext" name="description" id="description" placeholder="Descrição"  value="{{$delivery->description ?? ''}}" required><br>               
-                {{-- <input class="form-control" type="datetime-local" name="saida" id="saida" value="<?= date('Y-m-d\TH:i',strtotime($delivery->saida))?>" required><br>       --}}
-                <input class="btn btn primary" type="submit" value="Cadastrar">
+                <input class="form-control" type="datetime-local" name="saida" id="saida" required><br>      
+                <input class="btn btn-success" type="submit" value="Cadastrar">
                 </form>
     </div>
 @endsection
